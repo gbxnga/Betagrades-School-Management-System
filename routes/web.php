@@ -75,7 +75,7 @@ Route::group([ 'middleware' => [ 'auth:teacher'] ], function(){
 
     //Route::get('/student/profile/{id}', 'StudentController@show');
 
-    Route::get('teacher/timetable', 'TimetableController@index');
+    Route::get('teacher/timetable', 'TimetableController@index')->name('teacher.timetable');
     Route::get('teacher/timetable/create', 'TimetableController@index_create');
     Route::post('teacher/timetable/create/{id}', 'TimetableController@create');
     Route::get('teacher/timetable/create/{id}', 'TimetableController@form');
@@ -87,9 +87,9 @@ Route::group([ 'middleware' => [ 'auth:teacher'] ], function(){
     Route::post('teacher/attendance', 'AttendanceController@form');
     Route::post('teacher/attendance/save', 'AttendanceController@save')->name('teacher.attendance.save');
     Route::post('teacher/attendance/update', 'AttendanceController@update');
-    Route::get('teacher/attendance/date', 'AttendanceController@date');
+    Route::get('teacher/attendance/date', 'AttendanceController@date')->name('teacher.attendance.date');
     Route::post('teacher/attendance/date', 'AttendanceController@date_list');
-    Route::get('teacher/attendance/report', 'AttendanceController@index_report');
+    Route::get('teacher/attendance/report', 'AttendanceController@index_report')->name('teacher.attendance.report');
     Route::post('teacher/attendance/report', 'AttendanceController@report');
 
     Route::post('/teacher/examschedule/create', 'ExamScheduleController@schedule_form')->name('teacher.schedule.create.submit');
@@ -150,7 +150,7 @@ Route::group([ 'middleware' => [ 'auth:admin'] ], function(){
     Route::post('admin/teacher/assign/{id}', 'AssignController@create');
     Route::get('admin/teacher/assign/delete/{id}', 'AssignController@delete');
 
-    Route::get('admin/timetable', 'TimetableController@index');
+    Route::get('admin/timetable', 'TimetableController@index')->name('admin.timetable');
     Route::get('admin/timetable/create', 'TimetableController@index_create');
     Route::post('admin/timetable/create/{id}', 'TimetableController@create');
     Route::get('admin/timetable/create/{id}', 'TimetableController@form');
@@ -164,9 +164,9 @@ Route::group([ 'middleware' => [ 'auth:admin'] ], function(){
     Route::post('admin/attendance', 'AttendanceController@form');
     Route::post('admin/attendance/save', 'AttendanceController@save')->name('admin.attendance.save');
     Route::post('admin/attendance/update', 'AttendanceController@update');
-    Route::get('admin/attendance/date', 'AttendanceController@date');
+    Route::get('admin/attendance/date', 'AttendanceController@date')->name('admin.attendance.date');
     Route::post('admin/attendance/date', 'AttendanceController@date_list');
-    Route::get('admin/attendance/report', 'AttendanceController@index_report');
+    Route::get('admin/attendance/report', 'AttendanceController@index_report')->name('admin.attendance.report');
     Route::post('admin/attendance/report', 'AttendanceController@report');
 
     Route::post('/admin/examschedule/create', 'ExamScheduleController@schedule_form')->name('admin.schedule.create.submit');;

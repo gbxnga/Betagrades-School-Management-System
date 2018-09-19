@@ -125,9 +125,9 @@
             <li class="">
                 <a
                 @if (Auth::guard('teacher')->check())
-                                        href="/teacher/home"
+                                        href="{{route('teacher.dashboard')}}"
                                 @elseif (Auth::guard('admin')->check())
-                                        href="/admin/home"
+                                        href="{{route('admin.dashboard')}}"
                                 @endif
                 >
                     <i class="fa fa-dashboard"></i> <span>Home</span>
@@ -167,24 +167,24 @@
                                 <li class="active">
                                     <a
                                     @if (Auth::guard('teacher')->check())
-                                        href="/teacher/attendance"
+                                        href="{{route('teacher.attendance')}}"
                                     @elseif (Auth::guard('admin')->check())
-                                        href="/admin/attendance"
+                                        href="{{route('admin.attendance')}}"
                                     @endif 
                                     >
                                     <i class="fa fa-angle-double-right"></i> Student Attendance</a></li>
                                 <li class=""><a 
                                 @if (Auth::guard('teacher')->check())
-                                        href="/teacher/attendance/date"
+                                        href="{{route('teacher.attendance.date')}}"
                                     @elseif (Auth::guard('admin')->check())
-                                        href="/admin/attendance/date"
+                                        href="{{route('admin.attendance.date')}}"
                                     @endif 
                                     ><i class="fa fa-angle-double-right"></i> Attendance By Date</a></li>
                                 <li class=""><a 
                                 @if (Auth::guard('teacher')->check())
-                                        href="/teacher/attendance/report"
+                                        href="{{route('teacher.attendance.report')}}"
                                     @elseif (Auth::guard('admin')->check())
-                                        href="/admin/attendance/report"
+                                        href="{{route('admin.attendance.report')}}"
                                     @endif ><i class="fa fa-angle-double-right"></i> Attendance Report</a></li>
                             </ul>
                         </li>
@@ -195,9 +195,9 @@
                 <ul class="treeview-menu">
                     <li class=""><a
                     @if (Auth::guard('teacher')->check())
-                     href="/teacher/timetable"
+                     href="{{route('teacher.timetable')}}"
                     @elseif (Auth::guard('admin')->check())
-                    href="/admin/timetable"
+                    href="{{route('admin.timetable')}}"
                     @endif
                      ><i class="fa fa-angle-double-right"></i> Class Timetable</a></li>
 
@@ -218,9 +218,9 @@
                                 <li class=""><a href="{{action('MarkController@index')}}"><i class="fa fa-angle-double-right"></i> Marks Register</a></li>
                                 <li ><a 
                                 @if (Auth::guard('teacher')->check())
-                                        href="/teacher/gradereport"
+                                        href="{{route('teacher.report')}}"
                                 @elseif (Auth::guard('admin')->check())
-                                        href="/admin/gradereport"
+                                        href="{{route('admin.report')}}"
                                 @endif
                                 ><i class="fa fa-angle-double-right"></i> Grade Report</a></li>
                             </ul>
