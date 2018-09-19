@@ -230,7 +230,7 @@ Route::group([ 'middleware' => [ 'auth:admin'] ], function(){
 
 
 
-Route::get('/parent', 'ParentController@index');
+Route::get('/parent', 'ParentController@index')->name('parent.dashboard');
 Route::get('/parent/login', 'ParentController@showLogin');
 Route::post('/parent/login', 'ParentController@doLogin');
 Route::get('/parent/results', 'ParentController@result'); 

@@ -78,15 +78,16 @@
             @endif
 
             <div class="content">
+                
                 <div class="title m-b-md">
-                    Idris Premier College
+                    School Management System
                 </div>
                 <p>School Portal</p>
 
                 <div class="links">
-                    <a href="/admin">Admin Panel</a>
-                    <a href="/teacher">Teacher Panel</a>
-                    <a href="/parent">Parent Panel</a>
+                    <a href="{{route('admin.dashboard')}}">Admin Panel</a>
+                    <a href="{{route('teacher.dashboard')}}">Teacher Panel</a>
+                    <a href="{{route('parent.dashboard')}}">Parent Panel</a>
                 </div>
             </div>
         </div>
