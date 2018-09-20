@@ -29,7 +29,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 
-<body class="hold-transition login-page" style="background-image:url('bg.jpg');background-size:cover">
+<body class="hold-transition login-page" styl="background-image:url('bg.jpg');background-size:cover"style="background-image: url(http://notesandqueries.ca/wp-content/uploads/2014/12/Pataskala_Elementary_School.jpg);background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;">
    
     <div class="login-box">
              <?php 
@@ -46,7 +48,7 @@
         </div>
         <!-- /.login-logo -->
         <div class="login-box-body">
-            <h3 class="text-center"><b>IDP Parent Portal</b></h3>
+            <h3 class="text-center"><b>Parent Portal</b></h3>
             <p class="login-box-msg">Sign in with your Addmission number and PIN</p>
 
             <form method="post">

@@ -8,33 +8,33 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
-    <link rel="stylesheet" href="http://localhost:8000/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ URL::asset('bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="http://localhost:8000/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ URL::asset('bower_components/font-awesome/css/font-awesome.min.css') }}">
     <!-- Ionicons -->
-    <link rel="stylesheet" href="http://localhost:8000/bower_components/Ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="{{ URL::asset('bower_components/Ionicons/css/ionicons.min.css') }}">
     <!-- daterange picker -->
-    <link rel="stylesheet" href="http://localhost:8000/bower_components/bootstrap-daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="{{ URL::asset('bower_components/bootstrap-daterangepicker/daterangepicker.css') }}">
         <!-- Date Picker -->
-    <link rel="stylesheet" href="http://localhost:8000/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="{{ URL::asset('bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css') }}">
     <!-- fullCalendar -->
-    <link rel="stylesheet" href="http://localhost:8000/bower_components/fullcalendar/dist/fullcalendar.min.css">
-    <link rel="stylesheet" href="http://localhost:8000/bower_components/fullcalendar/dist/fullcalendar.print.min.css" media="print">
+    <link rel="stylesheet" href="{{ URL::asset('bower_components/fullcalendar/dist/fullcalendar.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('bower_components/fullcalendar/dist/fullcalendar.print.min.css') }}" media="print">
     <!-- Theme style -->
-    <link rel="stylesheet" href="http://localhost:8000/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="{{ URL::asset('dist/css/AdminLTE.min.css') }}">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="http://localhost:8000/dist/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="{{ URL::asset('dist/css/skins/_all-skins.min.css') }}">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-  <script src="http://localhost:8000/https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="http://localhost:8000/https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <script src="{{ URL::asset('https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js') }}"></script>
+  <script src="{{ URL::asset('https://oss.maxcdn.com/respond/1.4.2/respond.min.js') }}"></script>
   <![endif]-->
 
     <!-- Google Font -->
-    <link rel="stylesheet" href="http://localhost:8000/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 
 <body class="hold-transition skin-blue layout-top-nav">
@@ -46,7 +46,7 @@
             <nav class="navbar navbar-static-top">
                 <div class="container">
                     <div class="navbar-header">
-                        <a href="index2.html" class="navbar-brand"><b>Idris Premier College</b></a>
+                        <a href="index2.html" class="navbar-brand"><b>School Name</b></a>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
             <i class="fa fa-bars"></i>
           </button>
@@ -213,29 +213,29 @@
 </footer>
 
 <!-- jQuery 3 -->
-<script src="http://localhost:8000/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="{{ URL::asset('bower_components/jquery/dist/jquery.min.js') }}"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="http://localhost:8000/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="{{ URL::asset('bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 <!-- jQuery UI 1.11.4 -->
-<script src="http://localhost:8000/bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="{{ URL::asset('bower_components/jquery-ui/jquery-ui.min.js') }}"></script>
 <!-- datepicker -->
-<script src="http://localhost:8000/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-<script src="http://localhost:8000/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="{{ URL::asset('bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js') }}"></script>
+<script src="{{ URL::asset('bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js') }}"></script>
 <!-- Slimscroll -->
-<script src="http://localhost:8000/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="{{ URL::asset('bower_components/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
 <!-- FastClick -->
-<script src="http://localhost:8000/bower_components/fastclick/lib/fastclick.js"></script>
+<script src="{{ URL::asset('bower_components/fastclick/lib/fastclick.js') }}"></script>
 <!-- AdminLTE App -->
-<script src="http://localhost:8000/dist/js/adminlte.min.js"></script>
+<script src="{{ URL::asset('dist/js/adminlte.min.js') }}"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="http://localhost:8000/dist/js/demo.js"></script>
+<script src="{{ URL::asset('dist/js/demo.js') }}"></script>
 
 <!-- fullCalendar -->
-<script src="http://localhost:8000/bower_components/moment/moment.js"></script>
-<script src="http://localhost:8000/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+<script src="{{ URL::asset('bower_components/moment/moment.js') }}"></script>
+<script src="{{ URL::asset('bower_components/fullcalendar/dist/fullcalendar.min.js') }}"></script>
 <!-- date-range-picker -->
-<script src="http://localhost:8000/bower_components/moment/min/moment.min.js"></script>
-<script src="http://localhost:8000/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="{{ URL::asset('bower_components/moment/min/moment.min.js') }}"></script>
+<script src="{{ URL::asset('bower_components/bootstrap-daterangepicker/daterangepicker.js') }}"></script>
 <script>
         //Date range picker
     $('#reservation').daterangepicker()

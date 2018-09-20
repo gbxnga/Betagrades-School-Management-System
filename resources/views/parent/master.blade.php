@@ -55,6 +55,7 @@
                             <li><a href="{{action('ParentController@timetable')}}">Timetable</a></li>
                             <li><a href="{{action('ParentController@schedule')}}">Exam/Test Schedule</a></li>
                             <li><a href="{{action('ParentController@profile')}}">Student's Profile</a></li>
+                            <li><a href="{{action('ParentController@show_interact')}}">Interact with School</a></li>
                             <!--<li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">

@@ -238,6 +238,7 @@ Route::get('/parent/attendance', 'ParentController@attendance');
 Route::get('/parent/timetable', 'ParentController@timetable');
 Route::get('/parent/examschedule', 'ParentController@schedule');
 Route::get('/parent/student/profile', 'ParentController@profile');
+Route::get('/parent/interact-with-school', 'ParentController@show_interact');
 //Route::get('/parent/examschedule', 'ExamScheduleController@show_schedule');
 
 

@@ -127,4 +127,11 @@ class ParentController extends Controller
 
         return view('parent.calendar', compact('events', 'news'));
     }
+
+    public function show_interact(){
+        
+        $events = Calendar::all();
+        $news = News::all();
+        return view('parent.calendar', compact('events', 'news'));
+    }
 }

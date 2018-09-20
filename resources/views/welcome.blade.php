@@ -62,9 +62,20 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            .white-text{
+                color: white !important;
+                font-family: 'Nanum Gothic', sans-serif !important;
+            }
+            .link{
+                font-size:20px !important
+            }
         </style>
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Open+Sans+Condensed:300|Poor+Story" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     </head>
-    <body>
+    <body style="background-image: url(http://notesandqueries.ca/wp-content/uploads/2014/12/Pataskala_Elementary_School.jpg);background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -79,15 +90,15 @@
 
             <div class="content">
                 
-                <div class="title m-b-md">
+                <div class="title m-b-md white-text">
                     School Management System
                 </div>
                 <p>School Portal</p>
 
-                <div class="links">
-                    <a href="{{route('admin.dashboard')}}">Admin Panel</a>
-                    <a href="{{route('teacher.dashboard')}}">Teacher Panel</a>
-                    <a href="{{route('parent.dashboard')}}">Parent Panel</a>
+                <div class="links white-text">
+                    <a class="white-text link" href="{{route('admin.dashboard')}}"><i class="fa fa-lock"></i> Admin Panel</a>
+                    <a class="white-text link" href="{{route('teacher.dashboard')}}"><i class="fa fa-chalkboard-teacher"></i> Teacher Panel</a>
+                    <a class="white-text link" href="{{route('parent.dashboard')}}"><i class="fa fa-male"></i><i class="fa fa-female"></i> Parent Panel</a>
                 </div>
             </div>
         </div>
